@@ -1,9 +1,11 @@
 # solstice-client-portal
-Coding Exercise - Utility Data Viewer
+
+<a href="https://pure-castle-54354.herokuapp.com/">Coding Exercise - Utility Data Viewer</a>
 
 Besides being good for the planet, solar power can help people save money on their utility bills.
 
 This website demonstrate the a ReactJS single page application using Node.JS backend. It loads and parses a json data file on the server. The json data file is requsted by the client and is used to populate the initial data for Redux store. The ReactJS application uses react-router for page management and redux for application state.
+
 
 Frameworks:
 
