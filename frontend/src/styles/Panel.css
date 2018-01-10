@@ -1,0 +1,8 @@
+.solstice .card-title {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.solstice .card-header {
+    border-bottom: solid 2px rgb(244, 244, 244);
+}

@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  padding: 20px 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(232, 232, 232);
+  /*background-image: url("../img/bkg.jpg");*/
+
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(232, 232, 232, 0.45), 
+      rgba(232, 232, 232, 0.0)
+    ),
+    /* bottom, image */
+    url("../img/bkg.jpg");
+
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-color: #aed0f0;
+
+
+}
+
+.solstice .panel-row {
+  background-color: rgba(232, 232, 232, 0.38);
+}
+.solstice .panel-col {
+  padding: 0.5em;
+}
+
+.solstice .react-bs-table-bordered{
+  background-color: rgb(236, 236, 236);
+}

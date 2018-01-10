@@ -1,0 +1,46 @@
+.footer {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: center;*/
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-size: 9pt;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#121212+0,414141+100 */
+background: rgb(18,18,18); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(18,18,18,1) 0%, rgba(65,65,65,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(18,18,18,1) 0%,rgba(65,65,65,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(18,18,18,1) 0%,rgba(65,65,65,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', endColorstr='#414141',GradientType=0 ); /* IE6-9 */
+border-top: solid 3px black;
+}
+
+.footer img {
+  height: 50px;
+}
+
+.footer-panel {
+  padding: 2em;
+  color: darkgrey;
+  text-transform: capitalize;
+}
+
+.footer-panel h4 {
+  color: white;
+}
+
+.footer .bottom {
+  padding: 1em;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  color: rgb(136, 136, 136)
+}
+
+.footer a {
+  color: lightgrey;
+}
+
+.footer a:hover {
+  color: white;
+}

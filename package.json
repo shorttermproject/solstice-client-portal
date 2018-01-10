@@ -1,0 +1,24 @@
+{
+  "name": "solstice-client-portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "cd frontend && npm start",
+    "backend": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shortter/solstice-client-portal.git"
+  },
+  "author": "Kenneth Weiss",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
