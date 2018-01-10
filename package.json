@@ -11,10 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shortter/solstice-client-portal.git"
+    "url": "https://github.com/shorttermproject/solstice-client-portal.git"
   },
   "author": "Kenneth Weiss",
-  "license": "MIT",
+  "license": "GPL",
   "dependencies": {
     "express": "^4.16.1"
   },

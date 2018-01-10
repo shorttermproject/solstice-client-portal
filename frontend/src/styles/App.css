@@ -34,3 +34,13 @@
 .solstice .react-bs-table-bordered{
   background-color: rgb(236, 236, 236);
 }
+
+.solstice .panel {
+
+  margin-bottom: 1em;
+}
+
+.solstice .panel .value {
+  font-weight: bolder;
+  font-size: 20pt;
+}

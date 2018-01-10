@@ -1,6 +1,11 @@
 import { combineReducers } from 'redux'
 import { RECEIVE_BILLS, ADD_BILL } from '../constants/ActionTypes'
 
+export function round(value, decimals) {
+  return (Math.round(value * 100) / 100).toFixed(decimals);
+}
+
+
 const bills = (state = [], action) => {
   switch (action.type) {
     case RECEIVE_BILLS:
@@ -33,13 +38,13 @@ export const getTotalKwh = (state) => {
 export const getTotalCost = (state) => {
   let cost = 0;
   state.bills.map(bill => cost += bill.bill);
-  return (Math.round(cost * 100) / 100).toFixed(2)
+  return round(cost);
 }
 
 export const getTotalSavings = (state) => {
   let savings = 0;
   state.bills.map(bill => savings += bill.savings);
-  return (Math.round(savings * 100) / 100).toFixed(2);
+  return round(savings);
 }
 
 export const getSortedBills = (state, field) =>
