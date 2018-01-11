@@ -4,7 +4,7 @@
 
 Besides being good for the planet, solar power can help people save money on their utility bills.
 
-This website demonstrate the a ReactJS single page application using Node.JS backend. It loads and parses a json data file on the server. The json data file is requsted by the client and is used to populate the initial data for Redux store. The ReactJS application uses react-router for page management and redux for application state.
+This website demonstrate a ReactJS single page application using Node.JS backend. The server loads and parses a json data file. The data file is requsted by the client and is used to populate the initial state in for Redux store. This demo uses react-router for page management and Redux for application state.s
 
 
 Frameworks:

@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { getSortedBills } from '../reducers/bills'
 import { setTimeout } from 'timers';
 
-class Graph extends Component {
+class SingleSeriesChart extends Component {
     componentWillUnmount() {
       this.chart && this.chart.destroy();
       this.chart = undefined;
@@ -79,4 +79,4 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps
-)(Graph)
+)(SingleSeriesChart)

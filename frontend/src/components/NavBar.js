@@ -20,7 +20,7 @@ class NavBar extends Component {
     return (
       <div>
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand className="navBarFont" href="/">
+          <NavbarBrand className="navBarFont" tag={Link} to="/home/">
           <img
               src={require('../img/solsticelogo.png')}
               alt="Solstice logo"

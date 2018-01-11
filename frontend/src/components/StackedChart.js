@@ -3,7 +3,7 @@ import Highcharts from 'highcharts';
 import { connect } from 'react-redux'
 import { getSortedBills } from '../reducers/bills'
 
-class Graph extends Component {
+class StackedChart extends Component {
   componentWillUnmount() {
     this.chart && this.chart.destroy();
     this.chart = undefined;
@@ -103,4 +103,4 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps
-)(Graph)
+)(StackedChart)

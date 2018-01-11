@@ -11,6 +11,8 @@ import Footer from '../components/Footer';
 import Admin from '../components/Admin';
 import { Container, Row, Col, Card } from 'reactstrap';
 import Panel from '../components/Panel';
+import SingleSeriesChart from '../components/SingleSeriesChart';
+import StackedChart from '../components/StackedChart';
 
 import '../styles/App.css';
 
@@ -25,10 +27,30 @@ const Body = ({data, totalkwh, totalcost, totalsavings}) => (
       </Row>
       <Row className="panel-row">
         <Col xs="12" md="6" className="panel-col">
-          <Panel title="Energy Consumption" type="energy" data={data}/>
+          <Panel title="Energy Consumption" type="energy" 
+              subtitle="Energy Use Over Time" 
+              detail="This chart shows your energy consumption in kilowatt hours over the time period." 
+              data={data}>
+            <SingleSeriesChart
+              column={'kwh'}
+              containerId="energy-chart"
+              seriesName={'Energy Use'}
+              yLabel={'Energy Use (kWh)'}/>
+          </Panel>
         </Col>
         <Col xs="12" md="6" className="panel-col">
-          <Panel title="Energy Cost and Savings" type="costs" data={data}/>
+          <Panel title="Energy Cost and Savings" type="costs" 
+              subtitle="Energy Costs and Savings" 
+              detail="This chart shows you the enerty cost and how much money you saved over the time period."
+              data={data}>
+            <StackedChart
+              column1={'bill'}
+              column2={'savings'}
+              containerId="costs-chart"
+              series2={'Savings'}
+              series1={'Energy Cost'}
+              yLabel={'Amount'}/>
+            </Panel>
         </Col>
       </Row>
     </Container>
